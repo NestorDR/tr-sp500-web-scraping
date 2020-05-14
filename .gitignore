@@ -1,0 +1,6 @@
+# edition
+.idea/
+
+# web drivers
+*.exe
+
