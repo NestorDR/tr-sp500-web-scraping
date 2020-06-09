@@ -1,5 +1,9 @@
+# Byte-compiled
+__pycache__/
+
 # edition
 .idea/
+.vscode/
 
 # web drivers
 *.exe

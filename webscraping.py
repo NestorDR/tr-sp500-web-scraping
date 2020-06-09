@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+# Datetime: this module supplies classes for manipulating dates and times.
+import datetime as dt
 # Beautiful Soup: library designed for quick turnaround projects like screen-scraping
 from bs4 import BeautifulSoup
 # Contextlib: this module provides utilities for common tasks involving the 'with' statement
@@ -159,6 +163,8 @@ def __log_error(exception_: str):
 # however if used by importing from another module: import my_module, the __name__ attribute will be 'my_module'.
 if __name__ == '__main__':
 
+    print(dt.datetime.now().strftime('\nStart time %Y-%m-%d %H:%M:%S'))
+
     # By default, scrape the IG Markets site
     # This is a static scraping that ignores JavaScript. It fetches web pages from the server without the help
     #   of a browser. You get exactly what you see in "view page source", and then you slice and dice it
@@ -189,7 +195,7 @@ if __name__ == '__main__':
 
         if current_price_ > 0:
             # Show result
-            print('\nUsing STATIC Web Scraping')
+            print(dt.datetime.now().strftime('\n%H:%M:%S - Using STATIC Web Scraping'))
             print(f'Current price of {symbol_.upper()} CFD (by IG Markets) .: ${current_price_:.2f}')
         else:
             # Force dynamic scraping
@@ -215,5 +221,7 @@ if __name__ == '__main__':
 
         if current_price_ > 0:
             # Show result
-            print('\nUsing Dynamic Web Scraping')
+            print(dt.datetime.now().strftime('\n%H:%M:%S - Using DYNAMIC Web Scraping'))
             print(f'Current price of {symbol_.upper()}  CFD (by Trading View): ${current_price_:.2f}')
+
+    print(dt.datetime.now().strftime('\nEnd time %Y-%m-%d %H:%M:%S'))
