@@ -4,6 +4,7 @@ __pycache__/
 # edition
 .idea/
 .vscode/
+snippets/
 
 # web drivers
 *.exe

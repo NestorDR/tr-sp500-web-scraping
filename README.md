@@ -27,7 +27,7 @@ The Selenium library does not include its own browser. It need a third party bro
 in order to operate, the browser it automates. This is in addition to the browser itself, of course.
 You can choose from Chrome, Firefox, Safari or Edge, follow the instructions in the [Selenium guide](https://selenium-python.readthedocs.io/installation.html#drivers).
 The driver (.exe file) must be placed on the PATH of your operating system, or the current working folder.
-I use [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) in headless mode, which means no UI is displayed.
+I use [ChromeDriver](https://sites.google.com/chromium.org/driver/) in headless mode, which means no UI is displayed.
 
 ## Requirements
 ```console
